@@ -16,6 +16,7 @@
   "files": [
     "server.mjs",
     "README.md",
+    "README.zh-CN.md",
     "LICENSE"
   ],
   "engines": {
