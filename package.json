@@ -1,0 +1,40 @@
+{
+  "name": "deepseek-harness-mcp-bridge",
+  "version": "0.2.2",
+  "description": "A bidirectional DeepSeek Harness and Codex MCP collaboration bridge.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aloneswork/deepseek-harness-codex-bridge.git"
+  },
+  "homepage": "https://github.com/Aloneswork/deepseek-harness-codex-bridge#readme",
+  "bugs": "https://github.com/Aloneswork/deepseek-harness-codex-bridge/issues",
+  "type": "module",
+  "bin": {
+    "deepseek-harness-mcp": "server.mjs",
+    "dsh-codex-mail": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "deepseek",
+    "deepseek-harness",
+    "dsh-plugin",
+    "codex"
+  ],
+  "scripts": {
+    "prepack": "npm test",
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.4.3"
+  }
+}
